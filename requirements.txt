@@ -1,0 +1,14 @@
+streamlit
+google-generativeai
+python-dotenv
+langchain
+PyPDF2
+numpy
+opencv-python
+pillow
+chromadb
+pdf2image
+faiss-cpu
+langchain_google_genai
+streamlit-webrtc
+pyzbar
