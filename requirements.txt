@@ -4,7 +4,7 @@ python-dotenv
 langchain
 PyPDF2
 numpy
-opencv-python
+opencv-python-headless  # ✅ Replace 'opencv-python' with 'opencv-python-headless'
 pillow
 chromadb
 pdf2image
