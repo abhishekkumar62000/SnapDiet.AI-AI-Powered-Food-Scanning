@@ -19,13 +19,13 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 # Sidebar Images
 AI_path = "AI.png"  # Ensure this file is in the same directory as your script
 if os.path.exists(AI_path):
-    st.sidebar.image(AI_path, caption="AI Assistant", use_column_width=True)
+    st.sidebar.image(AI_path, caption="AI Assistant", use_container_width=True)
 else:
     st.sidebar.warning("AI.png file not found. Please check the file path.")
 
 image_path = "image.png"  # Ensure this file is in the same directory as your script
 if os.path.exists(image_path):
-    st.sidebar.image(image_path, caption="Stay Healthy!", use_column_width=True)
+    st.sidebar.image(image_path, caption="Stay Healthy!", use_container_width=True)
 else:
     st.sidebar.warning("image.png file not found. Please check the file path.")
 
