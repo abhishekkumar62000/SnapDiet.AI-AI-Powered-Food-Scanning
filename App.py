@@ -10,7 +10,7 @@ import cv2  # Import OpenCV for image processing
 from streamlit_webrtc import webrtc_streamer  # Import webrtc_streamer
 
 # Set the page configuration (must be the first Streamlit command)
-st.set_page_config(page_title="Gemini Health App", layout="wide")
+st.set_page_config(page_title="🤖 SnapDiet.AI App", layout="wide")
 
 load_dotenv()  # Load all the environment variables
 
