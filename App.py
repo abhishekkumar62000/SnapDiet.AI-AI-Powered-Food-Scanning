@@ -61,7 +61,7 @@ st.sidebar.markdown("👨‍💻 **Developer:** Abhishek💖Yadav")
 
 developer_path = "pic.jpg"  # Ensure this file is in the same directory as your script
 if os.path.exists(developer_path):
-    st.sidebar.image(developer_path, caption="Developer", use_column_width=True)
+    st.sidebar.image(developer_path, caption="Developer", use_container_width=True)
 else:
     st.sidebar.warning("pic.jpg file not found. Please check the file path.")
 
@@ -200,7 +200,7 @@ with tab1:
     image = ""
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        st.image(image, caption="Uploaded Image.", use_column_width=True)
+        st.image(image, caption="Uploaded Image.", use_container_width=True)
 
     daily_goal = st.number_input("Enter your daily calorie goal:", min_value=0, step=50, key="calorie_goal")
     submit = st.button("Tell me the total calories")
@@ -384,7 +384,7 @@ with tab11:
         uploaded_file = st.file_uploader("Upload an image of food:", type=["jpg", "jpeg", "png"], key="food_scanner_upload")
         if uploaded_file:
             image = Image.open(uploaded_file)
-            st.image(image, caption="Uploaded Food Image", use_column_width=True)
+            st.image(image, caption="Uploaded Food Image", use_container_width=True)
 
             if st.button("Analyze Food", key="analyze_food_button"):
                 # Convert image to bytes
@@ -501,7 +501,7 @@ with st.tabs(["AI Food Composition Analysis"])[0]:
     uploaded_file = st.file_uploader("Upload an image of food:", type=["jpg", "jpeg", "png"], key="food_composition_upload")
     if uploaded_file:
         image = Image.open(uploaded_file)
-        st.image(image, caption="Uploaded Food Image", use_column_width=True)
+        st.image(image, caption="Uploaded Food Image", use_container_width=True)
 
         if st.button("Analyze Food Composition", key="analyze_composition_button"):
             # Simulate AI analysis (replace with actual AI model call)
