@@ -30,7 +30,7 @@ SnapDiet.AI is your ultimate AI-powered health companion, designed to track nutr
 
 #🤖 SnapDiet.AI – AI-Powered Food Scanning
 Snap. Scan. Stay Fit! 😋
-  <img src="./image.png" width="400px"/>
+  <img src="./image.png" width="400px"/><br>
 
 ---
 
