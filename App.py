@@ -200,21 +200,39 @@ with tab1:
     image = ""
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        st.image(image, caption="Uploaded Image.", use_container_width=True)
+        st.image(image, caption="Uploaded Image.", use_column_width=True)
 
     daily_goal = st.number_input("Enter your daily calorie goal:", min_value=0, step=50, key="calorie_goal")
     submit = st.button("Tell me the total calories")
 
     input_prompt = """
-    You are an expert in nutritionist where you need to see the food items from the image
-                   and calculate the total calories, also provide the details of every food items with calories intake
-                   is below format
+    You are a highly skilled nutritionist. Your task is to analyze the food items in the given image,  
+    calculate the total calorie intake, and provide a detailed nutritional breakdown.  
 
-                   1. Item 1 - no of calories
-                   2. Item 2 - no of calories
-                   ----
-                   ----
-    """
+    **Your response should include:**
+    1. **List of Food Items with Calories:**
+       - Mention each food item along with its calorie count.  
+       - Example:
+         1. Item 1 - XX calories  
+         2. Item 2 - XX calories  
+         ----  
+         ----  
+
+    2. **Health Benefits & Risks:**
+       - Determine if this food is **beneficial or harmful** for the user.  
+       - Highlight **potential health benefits** (e.g., rich in protein, vitamins, fiber).  
+       - Warn about any **health concerns** (e.g., high sugar, excessive fat, processed ingredients).  
+
+    3. **Nutritional Information:**  
+       - Provide details on **macronutrients** (proteins, fats, carbohydrates).  
+       - Mention **vitamins and minerals** present in the food.  
+       - Indicate if it is suitable for special diets (e.g., keto, diabetic-friendly, heart-healthy).  
+
+    4. **Personalized Recommendation:**  
+       - Suggest whether the food is a **good choice** for overall health.  
+       - Recommend **healthier alternatives** if needed.  
+       - If high in unhealthy ingredients, provide tips to make it a **better option**.  
+"""
 
     if submit:
         try:
@@ -243,8 +261,17 @@ with tab1:
                 st.write(f"**{category}:**")
                 for item in items:
                     st.write(f"- {item}")
+
+            # Suggest if the food is beneficial
+            st.subheader("Is this food beneficial?")
+            if total_calories <= daily_goal:
+                st.write("✅ This food aligns with your daily calorie goal and is beneficial for you.")
+            else:
+                st.write("⚠️ This food exceeds your daily calorie goal. Consider adjusting portion sizes or choosing healthier alternatives.")
+
         except Exception as e:
             st.error(f"An error occurred: {str(e)}")
+
 
 # Tab 2: BMI Calculator
 with tab2:
