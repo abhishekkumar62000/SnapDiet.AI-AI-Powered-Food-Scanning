@@ -1,0 +1,1 @@
+# SnapDiet.AI-AI-Powered-Food-Scanning
