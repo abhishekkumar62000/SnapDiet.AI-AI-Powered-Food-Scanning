@@ -25,13 +25,9 @@
 🌱 Eat Smart. Stay Fit. Live Healthy.
 SnapDiet.AI is your ultimate AI-powered health companion, designed to track nutrition, fitness, and mental well-being effortlessly. Whether you want to analyze your meals, plan workouts, or monitor your health progress, SnapDiet.AI does it all!
 
-    Snap. Scan. Stay Fit! 😋
-
-
-#🤖 SnapDiet.AI – AI-Powered Food Scanning
 Snap. Scan. Stay Fit! 😋
-  <img src="./image.png" width="400px"/><br>
 
+<p align="center"> <img src="./image.png" width="400px" alt="SnapDiet.AI Preview"/> </p>
 ---
 
 ## 🎯 **Key App Features – Everything You Need in One Place! **  
