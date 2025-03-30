@@ -18,7 +18,7 @@
   <img src="./AI.png" width="270px" />
   <br><strong>
 ✦🤖 Welcome to SnapDiet.AI – Your AI-Powered Health & Nutrition Assistant! ✦</strong><br><br>
-	<a href=https://ai-personal-finance-agent.streamlit.app/>🌍👨‍💻🚨 **Live Demo APP & Try It Yourself!**</a><strong><br><br>
+	<a https://snapdiet-ai.streamlit.app/>🌍👨‍💻🚨 **Live Demo APP & Try It Yourself!**</a><strong><br><br>
 
   
   `## 🔥 **Project Overview**  
